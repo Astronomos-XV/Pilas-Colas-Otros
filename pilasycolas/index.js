@@ -10,7 +10,7 @@ class Queue{
         this.items[this.end] = data;
         this.end++;
     };
-    //Quita valores de la fila
+    //Quita valores de la fila y los muestra
     dequeue(){
         if(this.front === this.end){
         return null;
@@ -20,21 +20,24 @@ class Queue{
     return data;
 
     };
-    //OBTIENE LA LISTA COMPARANDO EL 
+    //OBTIENE LA LISTA 
     getSize(){
         return this.end - this.front;
     };
+    // si la lista esta vacia
     isEmpty(){
 
         return !this.getSize();
       
     };
+    //toma un elemento
     peek(){
         if (this.getSize === 0){
             return null;
         };
         return this.items[this.front];
     };
+    //imprime los elementos de la lista
     print(){
         if (this.getSize === 0){
             return null;
@@ -90,7 +93,7 @@ console.log(queue);
 
 
 
-/*class Stack{
+class Stack{
     constructor(){
         this.items ={};
         this.top = 0;
@@ -118,12 +121,7 @@ console.log(queue);
     isEmpty(){
 
         return !this.getSize();
-        //if(){
-          //  return true;
-        //}else{
-          //  return false;
-        //}
-       
+      
     }
      //Nos devolvera el siguiente valor de la pila sin sacarlo
      peek(){
@@ -163,4 +161,4 @@ console.log(stack.isEmpty());
 
 console.log(stack); // Imprime la lista
 
-console.log(stack.print());*/
+console.log(stack.print());
