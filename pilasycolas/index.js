@@ -69,30 +69,7 @@ console.log(queue.print());
 console.log(queue);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Fila
 class Stack{
     constructor(){
         this.items ={};
